@@ -14,16 +14,18 @@ a{
     text-decoration: none;
     color: black;
 }
+ul{
+    list-style-type: none;
+}
 
 /* =========header========== */
 
 header{
-    width: 900px;
+    width: 915px;
     height: 135px;
     background-color: #ffffff;
     position: relative;
-    margin-left: 222px;
-    margin-right: 222px;
+    margin:auto;
 } 
 
 /* ============headerright========= */
@@ -125,6 +127,16 @@ header .right ul li{
     display: inline-block;
 }
 
+.right ul li:hover{
+    background-color: rgb(221, 217, 217);
+    border-bottom: 3px solid rgb(241, 94, 119);
+    transform: scale(1.05,1.05);
+}
+
+.right ul a:hover{
+    color: red;
+}
+
 header .right .boder-right{
         padding: 5px;
         border-right: 1px dotted #d6d6d6;
@@ -177,7 +189,7 @@ header .right ul p::first-letter{
 .detail-slide {
     width: 940px;
     height: 355px;    
-    margin-left: 210px;
+    margin:auto;
     position: relative;
 }
 .detail-slide > input {
@@ -208,14 +220,14 @@ header .right ul p::first-letter{
     left: 0px;
     right: 0px;
     bottom: 0px;
-    z-index: 10;
+    /* z-index: 10; */
 }
 .detail-slide > div {
-    visibility: hidden;
+    display: none;
     opacity: 0;
 }
 .detail-slide > input:checked + label + div {
-    visibility: visible;
+    display: block;
     opacity: 1;
 }
 .detail-slide > div > h4 {    
@@ -244,20 +256,38 @@ header .right ul p::first-letter{
 
 /* ============divider=============
  */
- .divider{
-     margin-top: 20px;
-     color: #666666;
-     opacity: 0.7;
- }
+.break-line{
+    height: 5px;
+    margin: auto;
+    margin-top: 20px;
+    width: 940px;
+    background-image: url(image/all-logo.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    background-position: -76px -779px;
+    display: block;
+}
+.break-line-2{
+    height: 5px;
+    width: 940px;
+    background-image: url(image/all-logo.png);
+    background-repeat: no-repeat;
+    /* position: absolute; */
+    background-position: -76px -779px;
+    display: block;
+    /* margin-left: 210px; */
+    margin:35px auto;
+}
+
 
  /* =============section-top============
  */
 #section-top{
     width: 940px;
-    height: 450px;
+    height: auto;
     overflow: hidden;
-    margin-top: 50px;
-    margin-left: 210px;
+    margin:35px auto;
+    /* margin-top: 35px; */
 }
 
 #section-top img{
@@ -354,9 +384,9 @@ header .right ul p::first-letter{
 
 /* ===========bottom================ */
 .section-bot{
-    margin-top: 70px;
-    margin-left: 210px;
+    margin: 40px auto;
     overflow: hidden;
+    width: 940px;
 }
 
 .section-bot article{
