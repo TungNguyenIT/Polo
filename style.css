@@ -145,8 +145,8 @@ header .right .addleft{
     border-left: 1px dotted #d6d6d6;
 }
 
-header .right ul{
-
+header .right .li-right{
+    padding: 4px;
 }
 
 header .right ul a{
@@ -282,7 +282,7 @@ header .right ul p::first-letter{
 
  /* =============section-top============
  */
-#section-top{
+.section-top{
     width: 940px;
     height: auto;
     overflow: hidden;
@@ -290,46 +290,104 @@ header .right ul p::first-letter{
     /* margin-top: 35px; */
 }
 
-#section-top img{
+.section-top img{
     padding: 5px;
     border: 1px solid #e1e1e1;
     border-radius: 8px;
     margin-top: 20px;
 }
 
-#section-top a{
-    display: block;
+.section-top a{
+    display: inline-block;
 }
 
-#section-top a p{
+
+.section-top a p:hover{
+    color: black;
+}
+
+.section-top a p{
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 21px;
     text-transform: capitalize;
     color: #11719e;
 }
 
-#section-top p{
+.section-top p{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 12px;
     color: #8c8c8c;
 }
 
-#section-top .sub{
+.section-top .sub{
     margin-top: 15px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 13px;
 }
-#section-top article{
+.section-top article{
     height: auto;
 }
-#section-top .article1
+.section-top .article1
 {
     float: left;
     margin-right: 20px;
     width: 297px;
 }
 
-#section-top .article1 .shadow-image-top,
+/* button */
+.btn-learn-more{
+    display: inline-block;
+    max-width: 280px;
+    margin-top: 20px;
+    height: 32px;
+    border: 1px solid #d8d8d8;
+    border-radius: 3px;
+    background: linear-gradient(to right,#e8e8e8,#f6f6f6,#e8e8e8);
+    line-height: 32px;
+}
+.btn-learn-more span{
+    margin-left: 17px;
+    margin-right: 60px;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #016999;
+}
+.btn-learn-more .arrow{
+    width: 20px;
+    height: 10px;
+    background-image: url(image/all-logo.png);
+    background-repeat: no-repeat;
+    background-position: -200px -175px;
+    display: inline-block;
+    margin-right: 6px;
+}
+.btn-section-bot{
+    background: linear-gradient(to right, #376ea6,#4a82ba,#376ea6);
+    margin-top:10px;
+    border: 1px solid #004a80;
+    border-radius: 5px;
+}
+.btn-section-bot span{
+    color: #a5bcd8;
+}
+.btn-section-bot .arrow{
+    width: 20px;
+    height: 10px;
+    background-image: url(image/all-logo.png);
+    background-repeat: no-repeat;
+    background-position: -200px -162px;
+    display: inline-block;
+    margin-right: 6px;
+}
+.btn-section-bot-2 span{
+    margin-right: 85px;
+}
+.btn-section-bot-3 span{
+    margin-right: 35px;
+}
+/* end-button */
+
+.section-top .article1 .shadow-image-top,
 .article2 .shadow-image-top-2,
 .article3 .shadow-image-top-3
 {
@@ -344,7 +402,7 @@ header .right ul p::first-letter{
     background-position: -419px -126px;
 }
 
-#section-top .article1 .shadow-image-bot,
+.section-top .article1 .shadow-image-bot,
 .article2 .shadow-image-bot-2,
 .article3 .shadow-image-bot-3{
     width: 287px;
@@ -359,40 +417,29 @@ header .right ul p::first-letter{
 }
 
 
-#section-top .article2{
+.section-top .article2{
     float: left;
     margin-right: 20px;
     width: 297px;
 }
-#section-top .article3{
+.section-top .article3{
     width: 297px;
     float: right;
     margin-right: 7px;
 }
 
-#section-top article .total-info{
-    color: #769eb9;
-    margin-top: 20px;
-    width: 150px;
-    padding: 8px 0px 8px 8px;
-    /* background-color: #e8e8e8; */
-    background: linear-gradient(to left, rgb(255, 254, 254), #eee5e6);
-    border: 1px solid #d8d8d8;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 12px;
-}
 
 /* ===========bottom================ */
 .section-bot{
     margin: 40px auto;
     overflow: hidden;
-    width: 940px;
+    width: 954px;
 }
 
 .section-bot article{
     width: 298px;
     float:left;
-    margin-right: 12px;
+    margin-right: 20px;
 }
 .section-bot h4{
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -404,7 +451,7 @@ header .right ul p::first-letter{
     color: #d3d3d3;
     margin-top: 9px;
     margin-bottom: 12px;
-    width: 260px;
+    width: 293px;
     margin-left: 0px;
     border-style: dashed;
 }
@@ -421,31 +468,34 @@ header .right ul p::first-letter{
 }
 .section-bot .article1 input{
     margin-top: 10px;
-    margin-bottom: 10px;
     padding: 5px;
     width: 250px;
 }
 
-.section-bot .article1 .button-blue{
+/* .section-bot .article1 .button-blue{
     color: #ffffff;
     width: 160px;
     padding: 5px 0px 4px 10px;
-    /* background-color: #3e6d99; */
+    
     background: linear-gradient(to left, rgb(175, 171, 219), #7b5fb1);
-}
+} */
+
+
 
 
 /* article1 */
 
 .section-bot .article2 .input-small{
-    width: 250px;
+    border-radius: 8px;
+    width: 293px;
     height: 30px;
     margin-bottom: 17px;
 }
 
 .section-bot .article2 .input-big{
-    width: 250px;
-    height: 157px;
+    width: 293px;
+    height: 170px;
+    border-radius: 7px;
 }
 
 .section-bot .article2 .button-blue{
@@ -507,22 +557,18 @@ header .right ul p::first-letter{
     background-position: -201px -427px;
 }
 
-.section-bot .article3 div{
-    margin-top: 10px;
-    margin-bottom: 20px;
-    height: 55px;
+.section-bot .article3 .box1,.box2,.box3{
+    height: 70px;
 }
 
-.section-bot .article3 .button-blue{
-    color: #ffffff;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 13px;
-    width: 160px;
-    padding: 7px 0px 7px 10px;
-    background-color: #3e6d99;
-    margin-top: 31px;
-    background: linear-gradient(to left, rgb(175, 171, 219), #7b5fb1);
+.btn-section-bot-2{
+    margin-top: 7px;
 }
+
+.btn-section-bot-3{
+    margin-top: 5px;
+}
+
 .section-bot .article3 .box1 p{
     top: 4px;
     position: relative;
@@ -539,15 +585,20 @@ header .right ul p::first-letter{
 }
 
 .section-bot ul li{
+    display: inline-block;
     width: 55px;
     height: 55px;
-    display: inline-block;
+    margin-right: 1px;
     position: relative;
 }
 
 .section-bot ul li a{
     display: block;
     position: absolute;
+}
+
+.section-bot ul li:hover{
+    transform: rotate(10deg);
 }
 
 .section-bot ul li .ass{
