@@ -200,6 +200,11 @@ header .right ul p::first-letter{
     margin:auto;
     position: relative;
 }
+.detail-slide img{
+    width: 940px;
+    height: 345px;
+}
+
 .detail-slide > input {
     display: none;    
 }
@@ -347,7 +352,7 @@ header .right ul p::first-letter{
     display: inline-block;
     max-width: 280px;
     margin-top: 20px;
-    height: 32px;
+    height: 30px;
     border: 1px solid #d8d8d8;
     border-radius: 3px;
     background: linear-gradient(to right,#e8e8e8,#f6f6f6,#e8e8e8);
@@ -439,7 +444,7 @@ header .right ul p::first-letter{
 
 /* ===========bottom================ */
 .section-bot{
-    margin: 40px auto;
+    margin: 40px  auto 0px auto;
     overflow: hidden;
     width: 960px;
 }
@@ -580,14 +585,10 @@ header .right ul p::first-letter{
     margin-top: 5px;
 }
 
-.section-bot .article3 .box1 p{
-    top: 4px;
-    position: relative;
-}
-
 .section-bot .article3 p{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 12px;
+    margin-top: -12px
 }
 
 .section-bot ul{
@@ -694,9 +695,7 @@ footer .black-line{
 footer .black-line-2{
     top: 38px;
 }
-footer .remove-border-right{
-    border-right: #333333;
-}
+
 footer .content-footer p{
     margin-bottom: 0px;
 }
@@ -719,6 +718,10 @@ footer .content-footer ul li{
     border-right: 1px solid #999999;
     height: 16px;
 }
+footer .content-footer ul .remove-border{
+    border-right: unset;
+}
+
 footer .right{
     float: right;
     margin-top: -60px;
