@@ -2,90 +2,85 @@
 
 *{
     margin: 0px;
-    padding: 0px;
+    padding: 0px
 }
 
 
 body{
-    max-width: 100%;
     height: auto;
+    max-width: 100%
 }
 
 a{
-    text-decoration: none;
     color: black;
+    text-decoration: none
 }
 ul{
-    list-style-type: none;
+    list-style-type: none
 }
 
 ::placeholder{
-    opacity: 0.7;
+    opacity: 0.7
 }
 
 /* =========header========== */
-
 header{
-    width: 915px;
-    height: 135px;
     background-color: #ffffff;
-    position: relative;
+    height: 135px;
     margin:auto;
+    position: relative;
+    width: 915px
 } 
-
 /* ============headerright========= */
 header .logo{
-    width: 70px;
-    height: 80px;
-    float: left;
     background-image: url("../Polo/image/all-logo.png");
     background-position: -80px -45px;
     background-repeat: no-repeat;
+    height: 80px;
+    float: left;
     position: relative;
+    width: 70px
 }
-
 header .shadow-logo{
-    width: 70px;
-    height: 50px;
-    position: absolute;
     background-image: url("../Polo/image/all-logo.png");
     background-position: -226px -45px;
     background-repeat: no-repeat;
+    height: 50px;
+    position: absolute;
+    width: 70px
 }
 
 header .left{
-    width: 287px;
+    float: left;
     height: 80px;
     margin-top: 35px;
-    float: left;
+    width: 287px;
 }
 
 header .content-logo{
-    width: 212px;
     height: 55px;
     margin-left: 75px;
     margin-top: 4px;
     position: relative;
+    width: 212px
 
 }
 header .content-logo .sub-title{
     font-size: 13.74px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: bold;
-    text-transform: uppercase;
     margin-top: -5px;
-
+    text-transform: uppercase
 }
 
 header .content-logo .shadow-text{
-    width: 212px;
-    height: 20px;
-    position: absolute;
     background-image: url("image/tesst-s.png");
     background-repeat: no-repeat;
-    top: 11px;
+    height: 20px;
     left: 2px;
-    /* position: -423px -270px; */
+    top: 11px;
+    position: absolute;
+    width: 212px;
 }
 
 header .content-logo .polo{
@@ -107,39 +102,44 @@ header .content-logo #span3{
 }
 header .content-logo #span6{
     color: #0086ac;
-    font-family:'Gill Sans MT';
-    font-size: 48px;
-    font-weight: bold;
     letter-spacing: -1px;
 }
 header .content-logo #span0{
     color: #cc7f42;
-    font-family:'Gill Sans MT';
-    font-size: 48px;
-    font-weight: bold;
     letter-spacing: -2px;
 }
 
 
 /* =========header-right============ */
 header .right{
-    width: 532px;
-    height: 40px;
     float: right;
+    height: 40px;
     margin-top: 53px;
     margin-left: 393px;
     position: absolute;
+    width: 532px;
 }
 
 header .right ul li{
     display: inline-block;
 }
 
+@keyframes myChange{
+    0%{
+       background: whitesmoke;
+    }
+    100%{
+        background: rgb(223, 218, 218);
+    }
+}
+
 .right ul li:hover{
-    background-color: rgb(221, 217, 217);
+    animation: myChange 1.5s infinite;
     border-bottom: 3px solid rgb(241, 94, 119);
     transform: scale(1.05,1.05);
 }
+
+
 
 .right ul a:hover{
     color: red;
@@ -153,79 +153,77 @@ header .right .addleft{
     border-left: 1px dotted #d6d6d6;
 }
 
-header .right .li-right{
-    padding: 4px;
-}
+header .right .li-right{padding: 4px}
 
 header .right ul a{
+    color: #666666;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 14px;
-    text-transform: uppercase;
     font-weight: bold;
-    color: #666666;
+    text-transform: uppercase
 }
 
 header .right ul p{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 11px;
     color: #b7b7b7;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 11px
 }
 
 header .right ul p::first-letter{
-    text-transform: uppercase;
+    text-transform: uppercase
 }
 
 /* ==============slider=============== */
 
 .slider{
-	height: 100%;
-	max-height: 440px;	
 	border-bottom: solid #fff 100px;
 	background: #151515;
-	position: relative;
-	z-index:100;
+	height: 100%;
+	max-height: 440px;	
 	margin: 0 auto;
+	position: relative;
+	z-index:100
 }
 .slider img{
-	display: block;
-	width: 100%;
-	margin: 30px 0px 0px 0px;
 	border-radius: 8px;
 	border: 1px solid #9c8c8c;
-	/* box-shadow: 0px 12px 7px -7px rgba(99, 99, 99, 0.5); */
+	display: block;
+	margin: 30px 0px 0px 0px;
+    object-fit: cover;
+	width: 100%
 }
 .detail-slide {
-    width: 940px;
     height: 355px;    
     margin:auto;
     position: relative;
+    width: 945px
 }
 .detail-slide img{
-    width: 940px;
     height: 345px;
+    width: 940px
 }
 
 .detail-slide > input {
-    display: none;    
+    display: none   
 }
 .detail-slide > input + label {
-    display: inline-block;
-    width: 14px;
-    height: 14px;
     border-radius: 50%;
     background: #fff;
     border: 3px solid rgba(0, 0, 0, 0.8);
-    z-index: 100;
-    position: relative;
+    display: inline-block;
+    height: 14px;
     margin-right: 4px;
-    top: 325px;
+    position: relative;
     left: 20px;
+    top: 325px;
+    width: 14px;
+    z-index: 100
 }
 .detail-slide > input + label:hover {
-    background: rgba(250, 250, 250, 0.8);
+    background: rgba(250, 250, 250, 0.8)
 }
 .detail-slide > input:checked + label {
-    background: #4adbfa;
+    background: #4adbfa
 }
 .detail-slide > div {
     position: absolute;
@@ -237,160 +235,161 @@ header .right ul p::first-letter{
 }
 .detail-slide > div {
     display: none;
-    opacity: 0;
+    opacity: 0
 }
 .detail-slide > input:checked + label + div {
     display: block;
-    opacity: 1;
+    opacity: 1
 }
 .detail-slide > div > h4 {    
-    top: 0px;
-    left: 0px;
-    right: 0px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 24px;
     font-weight: bold;
     margin-top:18px;
-    text-align: center;   
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    text-align: center
 }
 
 .shadow-slider{
-    margin-left: 50px;
-    opacity: 0.4;
-    width: 945px;
-    height: 5px;
-    position: absolute;
     background-image: url(image/all-logo.png);
     background-repeat: no-repeat;
     background-position: -415px -45px;
-    margin-top: -3px;
     height: 14px;
+    margin-left: 50px;
+    margin-top: -3px;
+    opacity: 0.4;
+    position: absolute;
+    width: 945px
 }
 
 /* ============divider=============
  */
 .break-line{
-    height: 5px;
-    margin: auto;
-    margin-top: 20px;
-    width: 940px;
     background-image: url(image/all-logo.png);
     background-repeat: no-repeat;
     position: absolute;
     background-position: -76px -779px;
     display: block;
+    height: 5px;
+    margin: auto;
+    margin-top: 20px;
+    width: 940px;
 }
 .break-line-2{
-    height: 5px;
-    width: 940px;
     background-image: url(image/all-logo.png);
     background-repeat: no-repeat;
-    /* position: absolute; */
     background-position: -76px -779px;
     display: block;
-    /* margin-left: 210px; */
+    height: 5px;
     margin:35px auto;
+    width: 940px
 }
 
 
  /* =============section-top============
  */
 .section-top{
-    width: 940px;
     height: auto;
-    overflow: hidden;
     margin:35px auto;
-    /* margin-top: 35px; */
+    overflow: hidden;
+    width: 940px
 }
 
 .section-top img{
-    padding: 5px;
     border: 1px solid #e1e1e1;
     border-radius: 8px;
     margin-top: 20px;
+    padding: 5px
 }
 
 .section-top a{
     display: inline-block;
 }
 
-
 .section-top a p:hover{
     color: black;
 }
 
 .section-top a p{
+    color: #11719e;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 21px;
-    text-transform: capitalize;
-    color: #11719e;
+    text-transform: capitalize
 }
 
 .section-top p{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 12px;
     color: #8c8c8c;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px
 }
 
 .section-top .sub{
     margin-top: 15px;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 13px;
+    font-size: 13px
 }
 .section-top article{
-    height: auto;
+    height: auto
 }
 .section-top .article1
 {
-    float: left;
     margin-right: 20px;
-    width: 297px;
+    float: left;
+    width: 297px
 }
 
 /* button */
 .btn-learn-more{
-    display: inline-block;
-    max-width: 280px;
-    margin-top: 20px;
-    height: 30px;
     border: 1px solid #d8d8d8;
+    display: inline-block;
     border-radius: 3px;
     background: linear-gradient(to right,#e8e8e8,#f6f6f6,#e8e8e8);
+    height: 30px;
+    max-width: 280px;
+    margin-top: 20px;
     line-height: 32px;
 }
+.btn-learn-more:hover{
+    background: linear-gradient(to right,#f6f6f6,#e8e8e8,#f6f6f6);
+}
 .btn-learn-more span{
-    margin-left: 17px;
-    margin-right: 60px;
+    color: #016999;
     font-size: 12px;
     font-family: Arial, Helvetica, sans-serif;
-    color: #016999;
+    margin-left: 17px;
+    margin-right: 60px;
 }
 .btn-learn-more .arrow{
-    width: 20px;
-    height: 10px;
     background-image: url(image/all-logo.png);
     background-repeat: no-repeat;
     background-position: -200px -175px;
     display: inline-block;
+    height: 10px;
     margin-right: 6px;
+    width: 20px
 }
 .btn-section-bot{
     background: linear-gradient(to right, #376ea6,#4a82ba,#376ea6);
-    margin-top:10px;
     border: 1px solid #004a80;
     border-radius: 5px;
+    margin-top:10px
+}
+.btn-section-bot:hover{
+    background: linear-gradient(to right,#4a82ba,#376ea6,#4a82ba)
 }
 .btn-section-bot span{
-    color: #a5bcd8;
+    color: #a5bcd8
 }
 .btn-section-bot .arrow{
-    width: 20px;
-    height: 10px;
     background-image: url(image/all-logo.png);
     background-repeat: no-repeat;
     background-position: -200px -162px;
     display: inline-block;
+    height: 10px;
     margin-right: 6px;
+    width: 20px
 }
 .btn-section-bot-2 span{
     margin-right: 85px;
@@ -404,41 +403,41 @@ header .right ul p::first-letter{
 .article2 .shadow-image-top-2,
 .article3 .shadow-image-top-3
 {
-    width: 287px;
+    background-image: url(image/all-logo.png);
+    background-repeat: no-repeat;
+    background-position: -738px -126px;
     height: 7px;
     margin-left: 20px;
     margin-top: 15px;
     opacity: 0.25;
     position: absolute;
-    background-image: url(image/all-logo.png);
-    background-repeat: no-repeat;
-    background-position: -738px -126px;
+    width: 287px
 }
 
 .section-top .article1 .shadow-image-bot,
 .article2 .shadow-image-bot-2,
 .article3 .shadow-image-bot-3{
-    width: 287px;
-    height: 7px;
-    margin-left: 15px;
-    margin-top: -7px;
-    opacity: 0.25;
-    position: absolute;
     background-image: url(image/all-logo.png);
     background-repeat: no-repeat;
     background-position: -738px -126px;
+    height: 7px;
+    margin-left: 15px;
+    margin-top: -8px;
+    opacity: 0.25;
+    position: absolute;
+    width: 287px
 }
 
 
 .section-top .article2{
     float: left;
     margin-right: 20px;
-    width: 297px;
+    width: 297px
 }
 .section-top .article3{
-    width: 297px;
     float: right;
     margin-right: 7px;
+    width: 297px
 }
 
 
@@ -446,79 +445,61 @@ header .right ul p::first-letter{
 .section-bot{
     margin: 40px  auto 0px auto;
     overflow: hidden;
-    width: 960px;
+    width: 940px
 }
 
 .section-bot article{
+    margin-right: 18px;
     width: 298px;
-    float:left;
-    margin-right: 22px;
+    float: left;
+}
+.section-bot .remove-margin{
+    margin: unset
 }
 .section-bot h4{
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 18px;
     color: #858585;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px
 }
 
 .section-bot article hr{
+    border-style: dashed;
     color: #d3d3d3;
     margin-top: 9px;
     margin-bottom: 12px;
-    width: 293px;
     margin-left: 0px;
-    border-style: dashed;
+    width: 293px
 }
 
 .section-bot .article1 ul {
     display: inline-block;
     margin-top: 10px;
-    margin-bottom: 40px;
+    margin-bottom: 40px
 }
 .section-bot .article1 .new-letter{
-    font-family:'Gill Sans MT', Calibri;
-    font-weight: bold;
     margin-bottom: 20px;
+    font-family:'Gill Sans MT', Calibri;
+    font-weight: bold
 }
 .section-bot .article1 input{
     margin-top: 10px;
     padding: 5px;
-    width: 250px;
+    width: 250px
 }
-
-/* .section-bot .article1 .button-blue{
-    color: #ffffff;
-    width: 160px;
-    padding: 5px 0px 4px 10px;
-    
-    background: linear-gradient(to left, rgb(175, 171, 219), #7b5fb1);
-} */
-
-
-
 
 /* article1 */
 
 .section-bot .article2 .input-small{
-    border-radius: 8px;
-    width: 293px;
+    border-radius: 10px;
     height: 30px;
     margin-bottom: 17px;
+    width: 293px
 }
 
 .section-bot .article2 .input-big{
-    width: 293px;
-    height: 170px;
     border-radius: 7px;
-}
-
-.section-bot .article2 .button-blue{
-    color: #ffffff;
-    text-align: left;
-    width: 160px;
-    padding: 5px 0px 5px 10px;
-    background-color: #3e6d99;
-    margin-top: 20px;
-    background: linear-gradient(to left, rgb(175, 171, 219), #7b5fb1);
+    height: 170px;
+    width: 293px
 }
 
 /* article2 */
@@ -526,69 +507,69 @@ header .right ul p::first-letter{
     overflow: hidden;
 }
 .section-bot .article3 .img{
+    border: 1px solid #c8c3c3;
+    border-radius: 5px;
     float: left;
     margin: 3px;
     margin-right: 7px;
-    width: 50px;
     height: 50px;
     padding: 5px;
-    border: 1px solid #c8c3c3;
-    border-radius: 5px;
     position: relative;
+    width: 50px
 }
 
 .section-bot .article3 .img .firefox{
-    display: block;
-    padding: 3px;
-    position: absolute;
-    width: 50px;
-    height: 50px;
     background-image: url("image/all-logo.png");
     background-repeat: no-repeat;
     background-position: -202px -189px;
+    display: block;
+    padding: 3px;
+    position: absolute;
+    height: 50px;
     top: 5px;
+    width: 50px
 }
 
 .section-bot .article3 .img .eclipse{
-    display: block;
-    padding: 3px;
-    position: absolute;
-    width: 50px;
-    height: 50px;
     background-image: url("image/all-logo.png");
     background-repeat: no-repeat;
     background-position: -203px -310px;
-    top: 5px;
-}
-
-.section-bot .article3 .img .color{
     display: block;
     padding: 3px;
     position: absolute;
-    width: 50px;
     height: 50px;
+    top: 5px;
+    width: 50px
+}
+
+.section-bot .article3 .img .color{
     background-image: url("image/all-logo.png");
     background-repeat: no-repeat;
     background-position: -201px -427px;
+    display: block;
+    padding: 3px;
+    position: absolute;
+    height: 50px;
     top: 5px;
+    width: 50px
 }
 
 .section-bot .article3 .box1,.box2,.box3{
-    height: 70px;
+    height: 70px
 }
 
 .btn-section-bot-2{
-    margin-top: 7px;
+    margin-top: 7px
 }
 
 .btn-section-bot-3{
-    margin-top: 5px;
+    margin-top: 5px
 }
 
 .section-bot .article3 p{
+    margin-top: -12px;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 12px;
-    margin-top: -12px
+    font-size: 12px
 }
 
 .section-bot ul{
@@ -598,132 +579,143 @@ header .right ul p::first-letter{
 
 .section-bot ul li{
     display: inline-block;
-    width: 55px;
     height: 55px;
     position: relative;
+    width: 55px
 }
 
 .section-bot ul li a{
     display: block;
-    position: absolute;
+    position: absolute
 }
 
 .section-bot ul li:hover{
-    transform: rotate(10deg);
+    transform: rotate(10deg)
 }
 
 .section-bot ul li .ass{
-    width: 55px;
-    height: 55px;
     background-image: url("image/all-logo.png");
     background-position: -82px -190px;
     background-repeat: no-repeat;
+    height: 55px;
+    width: 55px
 }
 .section-bot ul li .facebook{
-    width: 55px;
-    height: 55px;
     background-image: url("image/all-logo.png");
     background-position: -82px -311px;
     background-repeat: no-repeat;
+    height: 55px;
+    width: 55px
 }
 .section-bot ul li .linked{
-    width: 55px;
-    height: 55px;
     background-image: url("image/all-logo.png");
     background-position: -82px -422px;
     background-repeat: no-repeat;
+    height: 55px;
+    width: 55px
 }
 .section-bot ul li .youtube{
-    width: 55px;
-    height: 55px;
     background-image: url("image/all-logo.png");
     background-position: -82px -535px;
     background-repeat: no-repeat;
+    width: 55px;
+    height: 55px
 }
 .section-bot ul li .twitter{
-    width: 55px;
-    height: 55px;
     background-image: url("image/all-logo.png");
     background-position: -82px -648px;
     background-repeat: no-repeat;
+    width: 55px;
+    height: 55px
 }
 .hr-section-top{
-    width: 940px;
-    margin-left: 202px;
     color: #e5e5e5;
+    margin-left: 202px;
+    width: 940px
 }
 
 
 /* =======fotter======= */
 footer{
-    height: 180px;
-    width: 100%;
     background-color: #333333;
+    height: 180px;
     margin-top: 22px;
     position: relative;
+    width: 100%
 }
 
 footer .nhatmau{
-    width: 100%;
-    height: 10px;
     background-color: #4c4c4c;
+    height: 10px;
+    width: 100%
 }
 
 footer .content-footer p,a{
     color: #999999;
-    text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 11px;
     line-height: 12px;
     padding: 3px;
+    text-decoration: none
 }
 footer .content-footer .left{
-    position: relative;
+    position: relative
 }
 footer .content-footer{
-    position: relative;
+    position: relative
 }
 footer .black-line{
-    width: 300px;
-    position: absolute;
-    height: 6px;
-    top: 18px;
     background: #333333;
+    width: 300px;
+    height: 6px;
     opacity: 999;
-}
-
-footer .black-line-2{
-    top: 38px;
+    position: absolute;
+    top: 18px
 }
 
 footer .content-footer p{
-    margin-bottom: 0px;
+    margin-bottom: 0px
 }
 
 footer .content-footer ul{
-    line-height: 20px;
+    line-height: 20px
 }
 
 footer .content-footer{
-    width: 960px;
-    height: auto;
     margin: 15px auto;
+    height: auto;
+    width: 960px
 }
 
 footer .content-footer ul{
-    list-style-type: none;
+    list-style-type: none
 }
 footer .content-footer ul li{
-    display: inline-block;
-    border-right: 1px solid #999999;
-    height: 16px;
+    display: inline-block
+}
+footer .content-footer ul a{
+    color: #999999;
+    border-right: 1px solid #6a6a6a;
+    font-size: 11px;
+    padding: 3px;
+    padding-right: 6px;
+    height: 2px;
+    line-height: 2px;
+    position: relative;
+    display: inline-block
+}
+footer .content-footer ul a:hover{
+    color: red
+}
+footer a:hover{
+    color: red
 }
 footer .content-footer ul .remove-border{
-    border-right: unset;
+    border-right: unset
 }
 
 footer .right{
     float: right;
     margin-top: -60px;
-    margin-right: 15px;
+    margin-right: 15px
 }
