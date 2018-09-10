@@ -93,18 +93,18 @@ header .content-logo .polo{
     margin-top: 3px;
 }
 
-header .content-logo #span3{
+header .content-logo .span3{
     color: #be0f6a;
     font-family:'Gill Sans MT';
     font-size: 48px;
     font-weight: bold;
     letter-spacing: -1px;
 }
-header .content-logo #span6{
+header .content-logo .span6{
     color: #0086ac;
     letter-spacing: -1px;
 }
-header .content-logo #span0{
+header .content-logo .span0{
     color: #cc7f42;
     letter-spacing: -2px;
 }
